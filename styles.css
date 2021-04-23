@@ -34,6 +34,7 @@ body {
 }
     
 
+
 .top-section{
     text-align: center;
     padding:4rem 0;
@@ -125,6 +126,14 @@ body {
 }
 
 }
+=======
+.mybgcolor {background-color:#ede6e6; } 
+.myforecolor {color:#ede6e6; }
+.mybordercolor {border:3px solid #ede6e6; }
+
+
+
+
 h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Quattrocento', serif; */
     font-family: 'Sintony', sans-serif;
@@ -260,6 +269,19 @@ i{
     align-items: center;
 }
 
+ a { background-color: #FAFAFF; }
+
+ a { background-color: rgb(250,250,255); }
+
+ div.DivClassName
+ {
+   background-color: #FAFAFF;
+ }
+ .BgClassName
+ {
+   background-color: #FAFAFF;
+ }
+
 .resume-button {
     position: absolute;
     width: 200px;
@@ -320,6 +342,4 @@ a:hover, a:focus {
     background-color: white;
     width: 100%;
 }
-    
-    
-   
+
