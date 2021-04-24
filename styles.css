@@ -112,7 +112,7 @@ body {
 }
 
 .content{
-    width; calc(50% - 2rem);
+    width: 48%;
 }
 
 .show-me:nth-child(n){
