@@ -81,7 +81,7 @@
     <div class="container">
         <h1 class="title"><b>Welcome. <br>We're Rhapsody For Youth.</b></h1>
         <p class="lead" style="width: 85%; margin: auto;">
-             Our mission is to interact with young individuals by motivating them to articulate their ideas and self-advocate for positive changes in their lives by providing services, such as classes, seminars, workshops, podcasts, a YouTube channel, and volunteering opportunities. We believe it is important to engage the youth in thoughtful conversations and discussions. Rhapsody for Youth is to make us heard.
+             Our mission is to: Information
         </p>
         <h5>
             <strong>Find us on</strong> 
@@ -99,6 +99,7 @@
         </div>
     </div>
     
+
      <!-- Slider -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -243,126 +244,120 @@ $(".step05").click( function() {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     
     <!-- Jumbotron end -->
+
+    <!-- Timeline -->
+ <h1>Timeline</h1>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">Event 1</div></li>
+		<li class="step step02"><div class="step-inner">Event 2</div></li>
+		<li class="step step03"><div class="step-inner">Event 3</div></li>
+		<li class="step step04"><div class="step-inner">Event 4</div></li>
+		<li class="step step05"><div class="step-inner">Event 5</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>Thing one</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>T2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>T 3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>T4</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>T5</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+	</script>
+    
+<br><br><br>    
+  <!-- Jumbotron -->
+ <div class="jumbotron jumbotron-fluid" style="background-color: #fffffa;">
+
   <div class="col-md-8 col-sm-12 h-center w-95" id="programs">
             <br><br><br>
-            <h2 class= "align-items-center" style="padding-bottom: 2%">Programs</h2>
-                <div class="card" 
-                     style="
-                        border-radius: 0px; 
-                        border: 0px; 
-                        background-color: #edf3f5;
-                        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-                        padding: 2% 2%;
-                        ">
-                    <div>
-                        <span id="tribune" onclick="expandtribune()">[ + ]</span>
-                        <span style="font-size: 24px;"> <b>2021</b></span>
-                    </div>
-                     <p><i>Add Description</i></p>
-                    <div id="tribune-desc" style="display: none">
-                        <!-- TO-DO: Add experience description -->
-                        Spring:
-                        <ul> 
-                            <li>Creative Writing Class</li>
-                            <li>Beginning Public Forum Class</li>
-                            <li>Intermediate Public Forum Class</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <!-- TO-DO: Experience 2 -->
-                <div class="card" 
-                     style="
-                        border-radius: 0px; 
-                        border: 0px; 
-                        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-                        background-color: #edf3f5;
-                        padding: 2% 2%;
-                        ">
-                    <div>
-                        <span id="two" onclick="expandtwo()">[ + ]</span>
-                        <span style="font-size: 24px"> <b>2020</b></span>
-                    </div>
-                     <p><i>Add Description</i></p>
-                    <div id="two-desc" style="display: none">
-                         Fall
-                   <ul>
-                        <li>Beginner Speech &mp; Writing</li>
-                        <li>Intermediate Speech & Debate</li>
-                        <li>Advanced Speech & Debate</li>
-                    </ul>    
-                      Winter
-                    <ul>
-                        <li>Introduction to Youth Leadership</li>
-                   </ul> 
-                       Spring
-                    <ul>
-                        <li>Intermediate Speech & Debate</li>
-                        <li>Second Beginner Speech & Debate Class, two sections</li>
-                        <li>Argumentative/Persuasive Reading & Writing</li>
-                   </ul>   
-                       Summer
-                   <ul>
-                       <li>June Public Speaking Intensive</li>
-                       <li>Reading & Writing Class, collaboration with Charms Academic Learning School</li>
-                       <li>BLM Seminar</li>
-                       <li>July Speech & Debate Intensive</li>
-                   </ul>     
-                </div>
-                </div>
-                <br>
-                <!-- TO-DO: Experience 3 -->
-                <div class="card" 
-                     style="
-                        border-radius: 0px; 
-                        border: 0px; 
-                        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-                        background-color: #edf3f5;
-                        padding: 2% 2%;
-                        ">
-                    <div>
-                        <span id="three" onclick="expandthree()">[ + ]</span>
-                        <span style="font-size: 24px"> <b>2019</b></span>
-                    </div>
-                    <p><i>Add Description</i></p>
-                    <div id="three-desc" style="display: none">
-                        <!-- TO-DO: Add experience description -->
-                    Winter
-                        <li>Beginner Speech & Debate</li>
-                    </div>
-                </div>
-                <br> 
-                <!-- TO-DO: Experience 4 -->
-<!--                 <div class="card" 
-                     style="
-                        border-radius: 0px; 
-                        border: 0px; 
-                        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-                        background-color: #d7eef1;
-                        padding: 2% 2%;
-                        ">
-                    <span style="font-size: small">Dec 2020 - Present</span>
-                    <div>
-                        <span id="four" onclick="expandfour()">[ + ]</span>
-                        <span style="font-size: 24px"> <b>San Ramon Tech for Social Good</b></span>
-                    </div>
-                    <p><i>President, Founder</i></p>
-                    <div id="four-desc" style="display: none">
-                        <!-- TO-DO: Add experience description -->
-                       <!-- <li>Founder of the organization.</li>
-                    <li>Utilizes Canva to make attractive, marketing<a href="https://www.instagram.com/techforsocialgoodsr/" target="_blank"> social media posts.</a></li>
-                        <li>Teaches aspiring coders web development strategies and skills.</li>
-                    <li>Builds high-quality and modern technological resources for the organizations and nonprofits of the Tri-Valley community.
-                    <li>Utilizes simple HTML, CSS, and Javascript to create clean and responsive technology.</li>
-                    </div>
-                </div>
-          </div>
-        </div> 
-    </div>  -->
+            <h2 class= "align-items-center" style="padding-bottom: 2%;">Programs</h2>
+	  <p> For a complete list of our 2021 programs, <a src=""> click here </p></a>
+            
+              
+</br></br></br> 
     <!-- Edu/Experience end -->
   
     </div>
+<br><br><br>
+<div class="col-md-8 col-sm-12 h-center w-95;">
+    <div id="education">
+              <div class="bg">
+            <h2 style="text-align:left;">Upcoming Events</h2>
+             <img class="layer2" src="" alt="Calendar">
+          </div>
+<br><br><br>
+          <div class="cont">
+            <p>event information</p>
+            <p>event information</p>
+            <p>event information</p>
+            <p>event information</p>
+          </div>
+</br></br></br>
+    </div>
+</div>
 
+</br></br></br>
 
 <!-- BOOTSTRAP JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -374,6 +369,3 @@ $(".step05").click( function() {
     
 </body>
 </html>
-
-
- 
