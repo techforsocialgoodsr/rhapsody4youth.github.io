@@ -6,16 +6,16 @@ html,
 /* nav, */
 
 body {
-  background-color: #fafaff;
-  text-shadow: none;
-  background-repeat: repeat;
-  background-size: cover;
-  color: black;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  scroll-behavior: smooth;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+	background-color: #fafaff;
+	text-shadow: none;
+	background-repeat: repeat;
+	background-size: cover;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	scroll-behavior: smooth;
+	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     
 }
 
@@ -26,7 +26,7 @@ body {
 
  /* Timeline */
     
-  
+
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
@@ -59,7 +59,6 @@ body {
 	border-radius:50%;
 	border:solid 2px #aaa;
 	transition:all ease 0.3s;
-     
 }
 
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
@@ -108,7 +107,6 @@ body {
 	margin-top:40px;
 	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
 	transition:all ease 0.2s;
-     
 }
 
 #progress-bar-container li:hover:after {
@@ -153,7 +151,6 @@ body {
 	margin-top:40px;
 	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
 	transition:all ease 0.2s;
-     
 }
 
 #progress-bar-container li:hover:after {
@@ -273,10 +270,9 @@ body {
 
 
 
-
 h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Quattrocento', serif; */
-    font-family: 'Sintony', sans-serif;
+    font-family: 'Sintony', sans-serif; 
     font-weight: 700;
     /* text-transform: uppercase; */
     letter-spacing: 1px;
@@ -460,6 +456,7 @@ a:hover, a:focus {
     border-bottom: 3px solid #1e1659;
     color:#d7eef1;
 }
+
 /*
 * Programs
 */
@@ -481,6 +478,15 @@ a:hover, a:focus {
     width: 100%;
 }
 
+/*
+* Our Team
+*/
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+
+
 
 
 /* Slider */
@@ -499,6 +505,6 @@ a:hover, a:focus {
     padding-bottom:50px;
 }
 
- #programs {
-   background-color: #fcfcf2;
- }
+#programs {
+	background-color: #fcfcf2;
+}
