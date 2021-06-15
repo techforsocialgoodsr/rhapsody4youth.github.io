@@ -67,6 +67,7 @@
 <body>
     
 <!-- Slider -->
+<!-- SLOW DOWN TRANSITION -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -237,6 +238,7 @@ $(".step05").click( function() {
     
     <!-- Jumbotron end -->   
   <!-- Jumbotron -->
+<!-- ADD A CARD OVER PROGRAMS, CODE SO WHEN PICKING SELECTIONS ON DROP DOWN MENU, MORE BOXES POP UP WITH A SPACE FOR DESCRIPTIONS -->
  <div class="jumbotron jumbotron-fluid" style="background-color: #fffffa;">
   <div class="col-md-8 col-sm-12 h-center w-95" id="programs">
             <br><br><br>
@@ -245,17 +247,19 @@ $(".step05").click( function() {
                 Right-aligned menu
               </button>
               <div class="dropdown-menu dropdown-menu-right">
-                <button class="dropdown-item" type="button">Action</button>
-                <button class="dropdown-item" type="button">Another action</button>
-                <button class="dropdown-item" type="button">Something else here</button>
+                <button class="dropdown-item" type="button">Leadership</button>
+                <button class="dropdown-item" type="button">Speech and Debate</button>
+                <button class="dropdown-item" type="button">Writing</button>
+		<button class="dropdown-item" type="button">Other</button>
               </div>
             </div>
             <h2 class= "align-items-center">Programs</h2>
             </div>
             
     <!-- Edu/Experience end -->
-  
     </div>
+
+<!-- CONNECT GOOGLE CALENDAR API, GET RID OF THIS CODE AFTER -->
 <br><br>
 <div class="col-md-8 col-sm-12 h-center w-95;">
     <div id="education">
@@ -278,6 +282,7 @@ $(".step05").click( function() {
 
 <!-- Our Team -->
 <div class="col-md-8 col-sm-12 h-center w-95;">
+  <div id="about">
   <h2>Our Team</h2>
   <br>
 
@@ -331,13 +336,15 @@ $(".step05").click( function() {
         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
-
+	  </div>
   </div>
 
 </div>
 
 <!-- Consider Donating -->
+<!-- ADD GOOGLE FORMS HUB -->
 <div class="col-sm-12 h-center w-95" style="margin-top: 50px; padding: 50px 50px; background-color: #e3e3e3">
+ <div id="works">
   <h2>
     Consider Donating
   </h2>
