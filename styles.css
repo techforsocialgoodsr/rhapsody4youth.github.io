@@ -19,6 +19,10 @@ body {
     
 }
 
+.pb-20 {
+	padding-bottom: 20px;
+}
+
 
 
  /* --- Timeline Horizontal --- */
@@ -63,7 +67,6 @@ body {
 
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
 	border:solid 2px #fff;
-       	 
 	background: linear-gradient(to right, #E91E63 0%,#fff 100%); 
 }
 
@@ -373,7 +376,6 @@ i{
 }
 
 .navbar.scrolled{
-    background-color:#ede6e6 !important;
     transition: background-color 200ms linear;
     color: #1e1659;
   }
@@ -450,7 +452,8 @@ i{
 
     .headshot {
         width: 90vw;
-    }
+	}
+}	
 
 a:hover, a:focus {
     border-bottom: 3px solid #1e1659;
@@ -478,6 +481,18 @@ a:hover, a:focus {
     width: 100%;
 }
 
+.program-example {
+	margin: 0px 0px;
+	background-color: wheat;
+	padding: 20px 10%;
+	border: 1px solid black;
+}
+
+.program-flex {
+	display: flex;
+}
+
+
 /*
 * Our Team
 */
@@ -491,7 +506,7 @@ a:hover, a:focus {
 
 /* Slider */
 .carousel-item{
-    height:32rem;
+    /* height:32rem; */
     background:#777;
     color: white;
     position: relative;
@@ -505,6 +520,18 @@ a:hover, a:focus {
     padding-bottom:50px;
 }
 
-#programs {
-	background-color: #fcfcf2;
+/* TEAM */
+.team {
+	
+}
+
+.team-grid {
+	display: flex;
+	justify-content: center;
+}
+
+.card-style {
+	margin-bottom: 20px;
+	margin-right: 20px;
+	filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
 }
